@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import TutorialDataService from "../services/tutorial.service";
+import ClienteDataService from "../services/cliente.service";
 
 export default class AddCliente extends Component {
   constructor(props) {
@@ -47,6 +47,8 @@ export default class AddCliente extends Component {
 
     ClienteDataService.create(data)
       .then(response => {
+
+
         this.setState({
           id: response.data.id,
           nome: response.data.nome,

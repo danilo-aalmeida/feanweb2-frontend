@@ -10,7 +10,7 @@ export default class ClientesList extends Component {
     this.refreshList = this.refreshList.bind(this);
     this.setActiveCliente = this.setActiveCliente.bind(this);
     this.removeAllClientes = this.removeAllClientes.bind(this);
-    this.searchNome = this.searchTitle.bind(this);
+    this.searchNome = this.searchNome.bind(this);
 
     this.state = {
       clientes: [],
@@ -94,7 +94,7 @@ export default class ClientesList extends Component {
             <input
               type="text"
               className="form-control"
-              placeholder="Search by nome"
+              placeholder="Procurar cliente pelo nome"
               value={searchNome}
               onChange={this.onChangeSearchNome}
             />
